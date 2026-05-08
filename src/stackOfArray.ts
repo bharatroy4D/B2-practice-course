@@ -1,5 +1,5 @@
 class Stack {
-    items: number[] = [];
+  private  items: number[] = [];
 
     // add element
     push(element: number): void {
@@ -22,3 +22,16 @@ class Stack {
         return this.items.length;
     }
 }
+// create stack
+const stack = new Stack();
+// add element
+stack.push(10)
+stack.push(20)
+stack.push(30)
+console.log(stack.items);
+
+// pop, peek, isEmpty, size
+console.log(`top element peek : ${stack.peek()}`);
+console.log(`remove last element-pop : ${stack.pop()}`);
+console.log(`total element-size : ${stack.size()}`);
+console.log(`isEmpty : ${stack.isEmpty()}`);
